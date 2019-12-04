@@ -1,0 +1,1224 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+  <title>Kindred 2020 Agenda</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700,900&display=swap" rel="stylesheet"> 
+	<link rel="stylesheet" href="./style.css">
+	
+	<script src="https://kit.fontawesome.com/d1172c4104.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<header>
+  <div class="nav">
+    <img class="logo" src="https://kindred.live/wp-content/themes/salient/staging/agenda/Kindred_2020_1C_RGB_P.png"/>
+    <div class="topNav">
+      <button>Home</button>
+      <button>Print</button>
+      <button>Attend</button>
+    </div>
+  </div>
+  <div class="titleF">
+    <h1>Agenda</h1>
+    <div class="filterNav"></div>
+  </div>
+  <div class="dateFixed">
+
+  </div>
+</header>
+
+<input type="text" id="myInput" onkeyup="myFunction('ele')" placeholder="搜索...">
+<div class="dropdown" id="dateclickfather">
+    <!-- <button onclick="dropdownMenu()" class="dropbtn"> -->
+    <button class="dropbtn">
+      Date
+    </button>
+    <div id="dateDropdown" class="dropdownContent">
+      <a href="#date12" id="clicktest">May 12</a>
+      <a href="#date13">May 13</a>
+      <a href="#date14">May 14</a>
+    </div>
+</div>
+
+<div class="dropdown" id="trackclickfather">
+    <button class="dropbtn" id="trackDropdownTop">
+      Track
+    </button>
+    <div id="trackDropdown" class="dropdownContent">
+      <a>Cultural Forces</a>
+      <a>Purpose-Led Org</a>
+      <a>Making an Impact</a>
+      <a>All</a>
+    </div>
+</div>
+
+<div class="dropdown" id="topicclickfather">
+    <button class="dropbtn" id="topicDropdownTop">
+      Type
+    </button>
+    <div id="topicDropdown" class="dropdownContent">
+      <a>eat</a>
+      <a>sleep</a>
+      <a>play</a>
+      <a>All</a>
+    </div>
+</div>
+<div class="main">
+<table id="test">
+  <caption>May 12</caption>
+  <thead>
+    <tr>
+      <!-- <th scope="col">Time</th> -->
+      <th scope="col">Cultural Forces<!--<i class="fas fa-democrat"></i>--></th>
+      <th scope="col">Purpose-Led Org<!--<i class="fas fa-crosshairs"></i>--></th>
+      <th scope="col">Making an Impact<!--<i class="fas fa-bullhorn"></i>--></th>
+    </tr>
+  </thead>
+  <tbody class="tableDate" id="date12">
+    <tr class="date">
+      <!-- <td scope="row" data-app-label="Time">7:00am-2:00pm</td> -->
+      <td colspan="3"><span class="gray">May 12</span></td>
+    </tr>
+    <tr class="activity">
+      <!-- <td scope="row" data-app-label="Time">8:00am-8:45am</td> -->
+      
+      <td colspan="3"><span class="gray"><p>Breakfast</p></span></td>
+      
+    </tr>
+    <tr class="activity">
+      <!-- <td scope="row" data-app-label="Time">8:00am-5:00pm</td> -->
+      
+      <td colspan="3"><span class="gray"><p>Kindred Store Open</p></span></td>
+      
+    </tr>
+    <tr class="activity">
+      <!-- <td scope="row" data-app-label="Time">8:45am-10:00am</td> -->
+      
+      <td colspan="3"><span class="gray"><p>Welcome Keynote</p></span></td>
+      
+    </tr>
+    <tr class="activity category">
+      <!-- <td scope="row" data-app-label="Time">10:10am-11:00am</td> -->
+      <td data-app-label="Cultural Forces">
+          <div class="element">
+              <div class="yellow">
+                  <div class="triangle">
+                      <div class="content"></div>
+                  </div>
+              </div>
+              <div class="text">
+                  <h3>test</h3>
+                  <p>
+                      <span>test</span> eat tt Ipsum is simply dummy text 
+                   </p>
+                   <p>
+                      <span>test</span> Lorem Ipsum is simply dummy text
+                   </p>
+                   <p>
+                      <span>test</span> Lorem Ipsum is simply dummy text
+                  </p>
+              </div>
+          </div>
+      <!-- <div class="element">
+        <div class="yellow">test</div>
+        <div class="content">
+          tttestppppppp
+        </div>
+      </div> -->
+        
+		  </td>
+      <td data-app-label="Purpose-Led Org">
+        <div class="element">
+            <div class="blue">
+                <div class="triangle">
+                    <div class="content"></div>
+                </div>
+            </div>
+            <div class="text">
+              <h3>test</h3>
+             <p>
+                <span>test</span> build Ipsum is simply dummy text 
+             </p>
+             <p>
+                <span>test</span> Lorem Ipsum is simply dummy text
+             </p>
+             <p>
+                <span>test</span> Lorem Ipsum is simply dummy text
+            </p>
+            </div>
+        </div>
+        <div class="element">
+            <div class="blue">
+                <div class="triangle">
+                    <div class="content"></div>
+                </div>
+            </div>
+            <div class="text">
+              <h3>test</h3>
+             <p>
+                <span>test</span> play is simply dummy text 
+             </p>
+             <p>
+                <span>test</span> Lorem Ipsum is simply dummy text
+             </p>
+             <p>
+                <span>test</span> Lorem Ipsum is simply dummy text
+            </p>
+            </div>
+        </div>
+		  </td>
+      <td data-app-label="Making an Impact">
+          <div class="element">
+              <div class="pink">
+                  <div class="triangle">
+                      <div class="content"></div>
+                  </div>
+              </div>
+              <div class="text">
+                  <h3>test</h3>
+                  <p>
+                      <span>test</span> kiki Ipsum is simply dummy text 
+                   </p>
+                   <p>
+                      <span>test</span> sleep Ipsum is simply dummy text
+                   </p>
+                   <p>
+                      <span>test</span> Lorem Ipsum is simply dummy text
+                  </p>
+              </div>
+          </div>
+          <div class="element">
+              <div class="pink">
+                  <div class="triangle">
+                      <div class="content"></div>
+                  </div>
+              </div>
+              <div class="text">
+                  <h3>test</h3>
+                  <p>
+                      <span>test</span> Ipsum is simply dummy text 
+                   </p>
+                   <p>
+                      <span>test</span> Lorem Ipsum is simply dummy text
+                   </p>
+                   <p>
+                      <span>test</span> Lorem Ipsum is simply dummy text
+                  </p>
+              </div>
+          </div>
+
+		</td>
+    </tr>
+    <tr class="activity">
+      <!-- <td scope="row" data-app-label="Time">8:45am-10:00am</td> -->
+      
+      <td colspan="3"><span class="gray"><p>Welcome Keynote</p></span></td>
+      
+    </tr>
+    <tr class="activity category">
+      <!-- <td scope="row" data-app-label="Time">10:10am-11:00am</td> -->
+      <td data-app-label="Cultural Forces">
+          <div class="element">
+              <div class="yellow">
+                  <div class="triangle">
+                      <div class="content"></div>
+                  </div>
+              </div>
+              <div class="text">
+                  <h3>test</h3>
+                  <p>
+                      <span>test</span> eat tt Ipsum is simply dummy text 
+                   </p>
+                   <p>
+                      <span>test</span> Lorem Ipsum is simply dummy text
+                   </p>
+                   <p>
+                      <span>test</span> Lorem Ipsum is simply dummy text
+                  </p>
+              </div>
+          </div>
+      <!-- <div class="element">
+        <div class="yellow">test</div>
+        <div class="content">
+          tttestppppppp
+        </div>
+      </div> -->
+        
+		  </td>
+      <td data-app-label="Purpose-Led Org">
+        <div class="element">
+            <div class="blue">
+                <div class="triangle">
+                    <div class="content"></div>
+                </div>
+            </div>
+            <div class="text">
+              <h3>test</h3>
+             <p>
+                <span>test</span> build Ipsum is simply dummy text 
+             </p>
+             <p>
+                <span>test</span> Lorem Ipsum is simply dummy text
+             </p>
+             <p>
+                <span>test</span> Lorem Ipsum is simply dummy text
+            </p>
+            </div>
+        </div>
+        <div class="element">
+            <div class="blue">
+                <div class="triangle">
+                    <div class="content"></div>
+                </div>
+            </div>
+            <div class="text">
+              <h3>test</h3>
+             <p>
+                <span>test</span> Ipsum is simply dummy text 
+             </p>
+             <p>
+                <span>test</span> Lorem Ipsum is simply dummy text
+             </p>
+             <p>
+                <span>test</span> Lorem Ipsum is simply dummy text
+            </p>
+            </div>
+        </div>
+		  </td>
+      <td data-app-label="Making an Impact">
+          <div class="element">
+              <div class="pink">
+                  <div class="triangle">
+                      <div class="content"></div>
+                  </div>
+              </div>
+              <div class="text">
+                  <h3>test</h3>
+                  <p>
+                      <span>test</span> kiki Ipsum is simply dummy text 
+                   </p>
+                   <p>
+                      <span>test</span> Lorem Ipsum is simply dummy text
+                   </p>
+                   <p>
+                      <span>test</span> Lorem Ipsum is simply dummy text
+                  </p>
+              </div>
+          </div>
+          <div class="element">
+              <div class="pink">
+                  <div class="triangle">
+                      <div class="content"></div>
+                  </div>
+              </div>
+              <div class="text">
+                  <h3>test</h3>
+                  <p>
+                      <span>test</span> kikik Ipsum is simply dummy text 
+                   </p>
+                   <p>
+                      <span>test</span> Lorem Ipsum is simply dummy text
+                   </p>
+                   <p>
+                      <span>test</span> Lorem Ipsum is simply dummy text
+                  </p>
+              </div>
+          </div>
+
+		</td>
+    </tr>
+    
+    <tr class="activity">
+      <!-- <td scope="row" data-app-label="Time">11:00am-11:40am</td> -->
+      
+      <td colspan="3"><span class="gray"><p>Showcase Break</p></span></td>
+      
+    </tr>
+    <tr class="activity">
+      <!-- <td scope="row" data-app-label="Time">11:40am-12:30pm</td> -->
+      <td data-app-label="Cultural Forces">
+		  <span class="yellow"><p>The Evolving Expectations of the Gen Z Workforce</p></span>
+		  <span class="yellow"><p>Deep Dive: Nuanced Approaches to Complex Issues</p></span>
+
+      <span class="yellow"><p>Hidden in Plain Sight: Neglected Issues Ripe for Brand Impact</p></span>
+		</td>
+      <td data-app-label="Purpose-Led Org">
+		  <span class="blue"><p>Building the Case for Purpose: Research for Informed Decision-Marking</p></span>
+      <span class="blue"><p>Marketing & CSR: Better Together</p></span>
+      <span class="blue"><p>Cross-Sector Best Practices</p></span>
+      <span class="blue"><p>Are Mental Health Skills the Next Mandatory Training Topic?</p></span>
+
+		</td>
+      <td data-app-label="Making an Impact">
+		  <span class="pink"><p>Case Study: Where Influence Meets Impact</p></span>
+      <span class="pink"><p>Part 1: Building Peer-to-Peer Movements</p></span>
+
+
+		</td>
+    </tr>
+
+    <tr class="activity">
+      <!-- <td scope="row" data-app-label="Time">12:40am-1:30pm</td> -->
+    <td data-app-label="Cultural Forces">
+		  <span class="yellow"><p>Case Study: Where Influence Meets Impact</p></span>
+		  <span class="yellow"><p>Deep Dive: How Influencers Raise Money & Drive Impact</p></span>
+
+      <span class="yellow"><p>Diversity: When It's a Debate and When It Isn't</p></span>
+		</td>
+    <td data-app-label="Purpose-Led Org">
+		  <span class="blue"><p>Purpose-Built: First Lessons from Mission-First Companies</p></span>
+      <span class="blue"><p>Revising Recruiting & Retention Practices with Purpose in Mind</p></span>
+      <span class="blue"><p>The Rise of the B Corp</p></span>
+
+		</td>
+      <td data-app-label="Making an Impact">
+		  <span class="pink"><p>Part 2: Building peer-to-peer movements (case study)</p></span>
+      <span class="pink"><p>Building Nonprofit Coalitions</p></span>
+      <span class="pink"><p>Businesses United to Drive Sustainable Development Goals</p></span>
+		</td>
+    </tr>
+
+    <tr class="activity">
+      <!-- <td scope="row" data-app-label="Time">1:30pm-2:45pm</td> -->
+      
+      <td colspan="3"><span class="gray"><p>Lunch</p></span></td>
+      
+    </tr>
+
+    <tr class="activity">
+      <!-- <td scope="row" data-app-label="Time">2:45pm-3:40pm</td> -->
+      <td data-app-label="Cultural Forces">
+		  <span class="yellow"><p>Twitter for Nonprofits</p></span>
+		  <span class="yellow"><p>Everything's Funny: Levity for Purpose</p></span>
+
+      <span class="yellow"><p>Winning Battles Against Disinformation and Misinformation</p></span>
+		</td>
+      <td data-app-label="Purpose-Led Org">
+		  <span class="blue"><p>Make Over Your Corporate Volunteer Program</p></span>
+      <span class="blue"><p>Corporate Governance in the Age of Accountability</p></span>
+      <span class="blue"><p>Matthew McCarthy, CEO, Ben & Jerry's</p></span>
+
+		</td>
+      <td data-app-label="Making an Impact">
+		  <span class="pink"><p>The Paths to Compensation Equality</p></span>
+      <span class="pink"><p>Case Study: Where Influence Meets Impact</p></span>
+      <span class="pink"><p>Volunteer Management & Capacity Building</p></span>
+		</td>
+    </tr>
+
+    <tr class="activity">
+      <!-- <td scope="row" data-app-label="Time">3:45pm-4:45pm</td> -->
+      
+      <td colspan="3"><span class="gray"><p>General Session</p></span></td>
+      
+    </tr>
+    <tr class="activity">
+      <!-- <td scope="row" data-app-label="Time">4:45pm-6:00pm</td> -->
+      
+      <td colspan="3"><span class="gray"><p>Hosted Programs</p></span></td>
+      
+    </tr>
+    <tr class="activity">
+      <!-- <td scope="row" data-app-label="Time">6:30pm-9:00pm</td> -->
+      
+      <td colspan="3"><span class="gray"><p>Evening Reception</p></span></td>
+      
+    </tr>
+	 
+  </tbody>
+
+  <tbody class="tableDate" id="date13">
+      <tr class="date">
+          <!-- <td scope="row" data-app-label="Time">7:00am-2:00pm</td> -->
+          <td colspan="3"><span class="gray">May 13</span></td>
+        </tr>
+      <tr class="activity">
+        <!-- <td scope="row" data-app-label="Time">8:00am-8:45am</td> -->
+        
+        <td colspan="3"><span class="gray"><p>Breakfast</p></span></td>
+        
+      </tr>
+      <tr class="activity">
+        <!-- <td scope="row" data-app-label="Time">8:00am-5:00pm</td> -->
+        
+        <td colspan="3"><span class="gray"><p>Kindred Store Open</p></span></td>
+        
+      </tr>
+      <tr class="activity">
+        <!-- <td scope="row" data-app-label="Time">8:45am-10:00am</td> -->
+        
+        <td colspan="3"><span class="gray"><p>Welcome Keynote</p></span></td>
+        
+      </tr>
+      <tr class="activity category">
+        <!-- <td scope="row" data-app-label="Time">10:10am-11:00am</td> -->
+        <td data-app-label="Cultural Forces">
+            <div class="element">
+                <div class="yellow">
+                    <div class="triangle">
+                        <div class="content"></div>
+                    </div>
+                </div>
+                <div class="text">
+                    <h3>test</h3>
+                    <p>
+                        <span>test</span> eat Ipsum is simply dummy text 
+                     </p>
+                     <p>
+                        <span>test</span> Lorem Ipsum is simply dummy text
+                     </p>
+                     <p>
+                        <span>test</span> Lorem Ipsum is simply dummy text
+                    </p>
+                </div>
+            </div>
+        <!-- <div class="element">
+          <div class="yellow">test</div>
+          <div class="content">
+            tttestppppppp
+          </div>
+        </div> -->
+          
+        </td>
+        <td data-app-label="Purpose-Led Org">
+          <div class="element">
+              <div class="blue">
+                  <div class="triangle">
+                      <div class="content"></div>
+                  </div>
+              </div>
+              <div class="text">
+                <h3>test</h3>
+               <p>
+                  <span>test</span> build Ipsum is simply dummy text 
+               </p>
+               <p>
+                  <span>test</span> Lorem Ipsum is simply dummy text
+               </p>
+               <p>
+                  <span>test</span> Lorem Ipsum is simply dummy text
+              </p>
+              </div>
+          </div>
+          <div class="element">
+              <div class="blue">
+                  <div class="triangle">
+                      <div class="content"></div>
+                  </div>
+              </div>
+              <div class="text">
+                <h3>test</h3>
+               <p>
+                  <span>test</span> Ipsum is simply dummy text 
+               </p>
+               <p>
+                  <span>test</span> Lorem Ipsum is simply dummy text
+               </p>
+               <p>
+                  <span>test</span> Lorem Ipsum is simply dummy text
+              </p>
+              </div>
+          </div>
+        </td>
+        <td data-app-label="Making an Impact">
+            <div class="element">
+                <div class="pink">
+                    <div class="triangle">
+                        <div class="content"></div>
+                    </div>
+                </div>
+                <div class="text">
+                    <h3>test</h3>
+                    <p>
+                        <span>test</span> kiki Ipsum is simply dummy text 
+                     </p>
+                     <p>
+                        <span>test</span> Lorem Ipsum is simply dummy text
+                     </p>
+                     <p>
+                        <span>test</span> Lorem Ipsum is simply dummy text
+                    </p>
+                </div>
+            </div>
+            <div class="element">
+                <div class="pink">
+                    <div class="triangle">
+                        <div class="content"></div>
+                    </div>
+                </div>
+                <div class="text">
+                    <h3>test</h3>
+                    <p>
+                        <span>test</span> Ipsum is simply dummy text 
+                     </p>
+                     <p>
+                        <span>test</span> Lorem Ipsum is simply dummy text
+                     </p>
+                     <p>
+                        <span>test</span> Lorem Ipsum is simply dummy text
+                    </p>
+                </div>
+            </div>
+  
+      </td>
+      </tr>
+      <tr class="activity">
+        <!-- <td scope="row" data-app-label="Time">11:00am-11:40am</td> -->
+        
+        <td colspan="3"><span class="gray"><p>Showcase Break</p></span></td>
+        
+      </tr>
+      <tr class="activity">
+        <!-- <td scope="row" data-app-label="Time">11:40am-12:30pm</td> -->
+        <td data-app-label="Cultural Forces">
+        <span class="yellow"><p>The Evolving Expectations of the Gen Z Workforce</p></span>
+        <span class="yellow"><p>Deep Dive: Nuanced Approaches to Complex Issues</p></span>
+  
+        <span class="yellow"><p>Hidden in Plain Sight: Neglected Issues Ripe for Brand Impact</p></span>
+      </td>
+        <td data-app-label="Purpose-Led Org">
+        <span class="blue"><p>Building the Case for Purpose: Research for Informed Decision-Marking</p></span>
+        <span class="blue"><p>Marketing & CSR: Better Together</p></span>
+        <span class="blue"><p>Cross-Sector Best Practices</p></span>
+        <span class="blue"><p>Are Mental Health Skills the Next Mandatory Training Topic?</p></span>
+  
+      </td>
+        <td data-app-label="Making an Impact">
+        <span class="pink"><p>Case Study: Where Influence Meets Impact</p></span>
+        <span class="pink"><p>Part 1: Building Peer-to-Peer Movements</p></span>
+  
+  
+      </td>
+      </tr>
+  
+      <tr class="activity">
+        <!-- <td scope="row" data-app-label="Time">12:40am-1:30pm</td> -->
+      <td data-app-label="Cultural Forces">
+        <span class="yellow"><p>Case Study: Where Influence Meets Impact</p></span>
+        <span class="yellow"><p>Deep Dive: How Influencers Raise Money & Drive Impact</p></span>
+  
+        <span class="yellow"><p>Diversity: When It's a Debate and When It Isn't</p></span>
+      </td>
+      <td data-app-label="Purpose-Led Org">
+        <span class="blue"><p>Purpose-Built: First Lessons from Mission-First Companies</p></span>
+        <span class="blue"><p>Revising Recruiting & Retention Practices with Purpose in Mind</p></span>
+        <span class="blue"><p>The Rise of the B Corp</p></span>
+  
+      </td>
+        <td data-app-label="Making an Impact">
+        <span class="pink"><p>Part 2: Building peer-to-peer movements (case study)</p></span>
+        <span class="pink"><p>Building Nonprofit Coalitions</p></span>
+        <span class="pink"><p>Businesses United to Drive Sustainable Development Goals</p></span>
+      </td>
+      </tr>
+  
+      <tr class="activity">
+        <!-- <td scope="row" data-app-label="Time">1:30pm-2:45pm</td> -->
+        
+        <td colspan="3"><span class="gray"><p>Lunch</p></span></td>
+        
+      </tr>
+  
+      <tr class="activity">
+        <!-- <td scope="row" data-app-label="Time">2:45pm-3:40pm</td> -->
+        <td data-app-label="Cultural Forces">
+        <span class="yellow"><p>Twitter for Nonprofits</p></span>
+        <span class="yellow"><p>Everything's Funny: Levity for Purpose</p></span>
+  
+        <span class="yellow"><p>Winning Battles Against Disinformation and Misinformation</p></span>
+      </td>
+        <td data-app-label="Purpose-Led Org">
+        <span class="blue"><p>Make Over Your Corporate Volunteer Program</p></span>
+        <span class="blue"><p>Corporate Governance in the Age of Accountability</p></span>
+        <span class="blue"><p>Matthew McCarthy, CEO, Ben & Jerry's</p></span>
+  
+      </td>
+        <td data-app-label="Making an Impact">
+        <span class="pink"><p>The Paths to Compensation Equality</p></span>
+        <span class="pink"><p>Case Study: Where Influence Meets Impact</p></span>
+        <span class="pink"><p>Volunteer Management & Capacity Building</p></span>
+      </td>
+      </tr>
+  
+      <tr class="activity">
+        <!-- <td scope="row" data-app-label="Time">3:45pm-4:45pm</td> -->
+        
+        <td colspan="3"><span class="gray"><p>General Session</p></span></td>
+        
+      </tr>
+      <tr class="activity">
+        <!-- <td scope="row" data-app-label="Time">4:45pm-6:00pm</td> -->
+        
+        <td colspan="3"><span class="gray"><p>Hosted Programs</p></span></td>
+        
+      </tr>
+      <tr class="activity">
+        <!-- <td scope="row" data-app-label="Time">6:30pm-9:00pm</td> -->
+        
+        <td colspan="3"><span class="gray"><p>Evening Reception</p></span></td>
+        
+      </tr>
+     
+  </tbody>
+
+  <tbody class="tableDate" id="date14">
+      <tr class="date">
+          <!-- <td scope="row" data-app-label="Time">7:00am-2:00pm</td> -->
+          <td colspan="3"><span class="gray">May 14</span></td>
+        </tr>
+      <tr class="activity">
+        <!-- <td scope="row" data-app-label="Time">8:00am-8:45am</td> -->
+        
+        <td colspan="3"><span class="gray"><p>Breakfast</p></span></td>
+        
+      </tr>
+      <tr class="activity">
+        <!-- <td scope="row" data-app-label="Time">8:00am-5:00pm</td> -->
+        
+        <td colspan="3"><span class="gray"><p>Kindred Store Open</p></span></td>
+        
+      </tr>
+      <tr class="activity">
+        <!-- <td scope="row" data-app-label="Time">8:45am-10:00am</td> -->
+        
+        <td colspan="3"><span class="gray"><p>Welcome Keynote</p></span></td>
+        
+      </tr>
+      <tr class="activity category">
+        <!-- <td scope="row" data-app-label="Time">10:10am-11:00am</td> -->
+        <td data-app-label="Cultural Forces">
+            <div class="element">
+                <div class="yellow">
+                    <div class="triangle">
+                        <div class="content"></div>
+                    </div>
+                </div>
+                <div class="text">
+                    <h3>test</h3>
+                    <p>
+                        <span>test</span> eat Ipsum is simply dummy text 
+                     </p>
+                     <p>
+                        <span>test</span> Lorem Ipsum is simply dummy text
+                     </p>
+                     <p>
+                        <span>test</span> Lorem Ipsum is simply dummy text
+                    </p>
+                </div>
+            </div>
+        <!-- <div class="element">
+          <div class="yellow">test</div>
+          <div class="content">
+            tttestppppppp
+          </div>
+        </div> -->
+          
+        </td>
+        <td data-app-label="Purpose-Led Org">
+          <div class="element">
+              <div class="blue">
+                  <div class="triangle">
+                      <div class="content"></div>
+                  </div>
+              </div>
+              <div class="text">
+                <h3>test</h3>
+               <p>
+                  <span>test</span> build Ipsum is simply dummy text 
+               </p>
+               <p>
+                  <span>test</span> Lorem Ipsum is simply dummy text
+               </p>
+               <p>
+                  <span>test</span> Lorem Ipsum is simply dummy text
+              </p>
+              </div>
+          </div>
+          <div class="element">
+              <div class="blue">
+                  <div class="triangle">
+                      <div class="content"></div>
+                  </div>
+              </div>
+              <div class="text">
+                <h3>test</h3>
+               <p>
+                  <span>test</span> Ipsum is simply dummy text 
+               </p>
+               <p>
+                  <span>test</span> Lorem Ipsum is simply dummy text
+               </p>
+               <p>
+                  <span>test</span> Lorem Ipsum is simply dummy text
+              </p>
+              </div>
+          </div>
+        </td>
+        <td data-app-label="Making an Impact">
+            <div class="element">
+                <div class="pink">
+                    <div class="triangle">
+                        <div class="content"></div>
+                    </div>
+                </div>
+                <div class="text">
+                    <h3>test</h3>
+                    <p>
+                        <span>test</span> kiki Ipsum is simply dummy text 
+                     </p>
+                     <p>
+                        <span>test</span> Lorem Ipsum is simply dummy text
+                     </p>
+                     <p>
+                        <span>test</span> Lorem Ipsum is simply dummy text
+                    </p>
+                </div>
+            </div>
+            <div class="element">
+                <div class="pink">
+                    <div class="triangle">
+                        <div class="content"></div>
+                    </div>
+                </div>
+                <div class="text">
+                    <h3>test</h3>
+                    <p>
+                        <span>test</span> Ipsum is simply dummy text 
+                     </p>
+                     <p>
+                        <span>test</span> Lorem Ipsum is simply dummy text
+                     </p>
+                     <p>
+                        <span>test</span> Lorem Ipsum is simply dummy text
+                    </p>
+                </div>
+            </div>
+  
+      </td>
+      </tr>
+      <tr class="activity">
+        <!-- <td scope="row" data-app-label="Time">11:00am-11:40am</td> -->
+        
+        <td colspan="3"><span class="gray"><p>Showcase Break</p></span></td>
+        
+      </tr>
+      <tr class="activity">
+        <!-- <td scope="row" data-app-label="Time">11:40am-12:30pm</td> -->
+        <td data-app-label="Cultural Forces">
+        <span class="yellow"><p>The Evolving Expectations of the Gen Z Workforce</p></span>
+        <span class="yellow"><p>Deep Dive: Nuanced Approaches to Complex Issues</p></span>
+  
+        <span class="yellow"><p>Hidden in Plain Sight: Neglected Issues Ripe for Brand Impact</p></span>
+      </td>
+        <td data-app-label="Purpose-Led Org">
+        <span class="blue"><p>Building the Case for Purpose: Research for Informed Decision-Marking</p></span>
+        <span class="blue"><p>Marketing & CSR: Better Together</p></span>
+        <span class="blue"><p>Cross-Sector Best Practices</p></span>
+        <span class="blue"><p>Are Mental Health Skills the Next Mandatory Training Topic?</p></span>
+  
+      </td>
+        <td data-app-label="Making an Impact">
+        <span class="pink"><p>Case Study: Where Influence Meets Impact</p></span>
+        <span class="pink"><p>Part 1: Building Peer-to-Peer Movements</p></span>
+  
+  
+      </td>
+      </tr>
+  
+      <tr class="activity">
+        <!-- <td scope="row" data-app-label="Time">12:40am-1:30pm</td> -->
+      <td data-app-label="Cultural Forces">
+        <span class="yellow"><p>Case Study: Where Influence Meets Impact</p></span>
+        <span class="yellow"><p>Deep Dive: How Influencers Raise Money & Drive Impact</p></span>
+  
+        <span class="yellow"><p>Diversity: When It's a Debate and When It Isn't</p></span>
+      </td>
+      <td data-app-label="Purpose-Led Org">
+        <span class="blue"><p>Purpose-Built: First Lessons from Mission-First Companies</p></span>
+        <span class="blue"><p>Revising Recruiting & Retention Practices with Purpose in Mind</p></span>
+        <span class="blue"><p>The Rise of the B Corp</p></span>
+  
+      </td>
+        <td data-app-label="Making an Impact">
+        <span class="pink"><p>Part 2: Building peer-to-peer movements (case study)</p></span>
+        <span class="pink"><p>Building Nonprofit Coalitions</p></span>
+        <span class="pink"><p>Businesses United to Drive Sustainable Development Goals</p></span>
+      </td>
+      </tr>
+  
+      <tr class="activity">
+        <!-- <td scope="row" data-app-label="Time">1:30pm-2:45pm</td> -->
+        
+        <td colspan="3"><span class="gray"><p>Lunch</p></span></td>
+        
+      </tr>
+  
+      <tr class="activity">
+        <!-- <td scope="row" data-app-label="Time">2:45pm-3:40pm</td> -->
+        <td data-app-label="Cultural Forces">
+        <span class="yellow"><p>Twitter for Nonprofits</p></span>
+        <span class="yellow"><p>Everything's Funny: Levity for Purpose</p></span>
+  
+        <span class="yellow"><p>Winning Battles Against Disinformation and Misinformation</p></span>
+      </td>
+        <td data-app-label="Purpose-Led Org">
+        <span class="blue"><p>Make Over Your Corporate Volunteer Program</p></span>
+        <span class="blue"><p>Corporate Governance in the Age of Accountability</p></span>
+        <span class="blue"><p>Matthew McCarthy, CEO, Ben & Jerry's</p></span>
+  
+      </td>
+        <td data-app-label="Making an Impact">
+        <span class="pink"><p>The Paths to Compensation Equality</p></span>
+        <span class="pink"><p>Case Study: Where Influence Meets Impact</p></span>
+        <span class="pink"><p>Volunteer Management & Capacity Building</p></span>
+      </td>
+      </tr>
+  
+      <tr class="activity">
+        <!-- <td scope="row" data-app-label="Time">3:45pm-4:45pm</td> -->
+        
+        <td colspan="3"><span class="gray"><p>General Session</p></span></td>
+        
+      </tr>
+      <tr class="activity">
+        <!-- <td scope="row" data-app-label="Time">4:45pm-6:00pm</td> -->
+        
+        <td colspan="3"><span class="gray"><p>Hosted Programs</p></span></td>
+        
+      </tr>
+      <tr class="activity">
+        <!-- <td scope="row" data-app-label="Time">6:30pm-9:00pm</td> -->
+        
+        <td colspan="3"><span class="gray"><p>Evening Reception</p></span></td>
+        
+      </tr>
+     
+  </tbody>
+</table>
+</div>
+
+
+<a id="hide" href="#" style="visibility:hidden; height: 48px;width: 38px;background-color: bisque;position: fixed;bottom: 10px;right: 10px" onclick="f();">返回顶部</a>
+<!-- partial -->
+
+
+
+<script>
+  let printpage=()=>{
+    window.print();
+  }
+</script>
+<script>
+var input;
+input = document.getElementById("myInput");
+		function myFunction(typeSearch, ind, tropicind) {
+		  // 声明变量
+		  var filter, table, tr, td, i, tdt, tbody;
+		  //input = document.getElementById("myInput");
+		  filter = input.value.toUpperCase();
+      //取的id，标签不牵连
+		  table = document.getElementsByTagName("table")[0];
+      tbody=table.getElementsByTagName('tbody')[0];
+		  tr = tbody.getElementsByTagName("tr");
+
+		  // 循环表格每一行，查找匹配项
+		  for (i = 0; i < tr.length; i++) {
+        td = tr[i].getElementsByTagName("td");
+        //for (var j=0; )
+			//td = tr[i].getElementsByTagName("td")[1];
+     // console.log(td.innerHTML);
+			//tdt = tr[i].getElementsByTagName("td")[1];
+			if (td) {
+
+        if(typeSearch==='ele'){
+            for(var j=0; j<td.length; j++){
+            var element=td[j].getElementsByClassName("element");
+            if(element){
+              for(var q=0; q<element.length; q++){
+                //for column search 
+                  /* if (element[q].innerText.toUpperCase().indexOf(filter) > -1) {
+                    td[j].style.display = "";
+                    console.log(filter);
+                    console.log(element[q].innerText.toUpperCase());
+                    break;
+                    } 
+                  else {
+                      element[q].style.display = "none";
+                    } */
+                  
+                  //for only element search
+                  if (element[q].innerText.toUpperCase().indexOf(filter) > -1) {
+                    element[q].style.display = "";
+                  } 
+                  else {
+                    element[q].style.display = "none";
+                  }
+
+                }
+              }
+            }
+        }
+
+        else if(typeSearch==='topic'){
+            for(let j=0; j<td.length; j++){
+            let element=td[j].getElementsByClassName("element");
+            if(element){
+              for(var q=0; q<element.length; q++){
+                  if (element[q].innerText.toUpperCase().indexOf(topicDropdownEle[tropicind].innerText.toUpperCase()) > -1) {
+                    element[q].style.display = "";
+                  } 
+                  else {
+                    element[q].style.display = "none";
+                  }
+
+                }
+              }
+            }
+        }
+
+        else if(typeSearch==='categ'){
+          if(td.length>2){
+            for(var j=0; j<td.length; j++){
+              let element=td[j].getElementsByClassName("element");
+              if(ind===j){
+                //td[j].style.opacity=1;
+                if(element){
+                  for(var q=0; q<element.length; q++){
+                    element[q].style.display = "";
+                    }
+                }
+              }
+              else{
+                if(element){
+                  for(var q=0; q<element.length; q++){
+                    element[q].style.display = "none";
+                    }
+                }
+              }
+            }
+          }
+
+        }
+
+        else if(typeSearch==='all'){
+          if(td.length>2){
+            for(var j=0; j<td.length; j++){
+              //td[j].style.opacity=1;
+              let element=td[j].getElementsByClassName("element");
+              if(element){
+                  for(var q=0; q<element.length; q++){
+                    element[q].style.display = "";
+                    }
+                }  
+            }
+          }
+        }
+
+        // original logic
+        /* for(var j=0; j<td.length; j++){
+          var element=td[j].getElementsByClassName("element");
+          if(element){
+            for(var q=0; q<element.length; q++){
+              //for column search 
+                 if (element[q].innerText.toUpperCase().indexOf(filter) > -1) {
+                  td[j].style.display = "";
+                  console.log(filter);
+                  console.log(element[q].innerText.toUpperCase());
+                  break;
+                  } 
+                else {
+                    element[q].style.display = "none";
+                  } 
+                
+                //for only element search
+                if (element[q].innerText.toUpperCase().indexOf(filter) > -1) {
+                  element[q].style.display = "";
+                } 
+                else {
+                  element[q].style.display = "none";
+                }
+
+            }
+          }
+        } */
+
+
+
+        //old span
+        /* for(var j=0; j<td.length; j++){
+          var span=td[j].getElementsByTagName("span");
+          if(span){
+            for(var q=0; q<span.length; q++){
+              if (span[q].innerHTML.toUpperCase().indexOf(filter) > -1) {
+                span[q].style.display = "";
+                } 
+                else {
+                span[q].style.display = "none";
+                }
+            }
+          }
+        } */
+
+
+       /*  var td1 = td[0];
+			  if (td1.innerHTML.toUpperCase().indexOf(filter) > -1) {
+				tr[i].style.display = "";
+			  } 
+				else {
+				tr[i].style.display = "none";
+			  } */
+			} 
+		  }
+		}
+
+    /* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
+/* function dropdownMenu() {
+  document.getElementById("myDropdown").classList.toggle("show");
+  
+} */
+
+var dropbtnarr=document.getElementsByClassName('dropbtn');
+var dropdownContent=document.getElementsByClassName('dropdownContent');
+
+for(let x=0; x<dropbtnarr.length;x++){
+    dropbtnarr[x].onclick=function(){
+
+      //clean all btn style
+
+      //console.log(dropbtnarr[x]);
+      //console.log(dropdownContent[x]);
+      for(let j=0; j<dropdownContent.length; j++){
+        if(j===x){
+          dropdownContent[j].classList.toggle("show");
+
+          //console.log(dropdownContent[j]);
+        }
+        else{
+          dropdownContent[j].classList.remove("show");
+        }
+        
+        
+      }
+      //dropdownContent[x].classList.toggle("show");
+      /* for (var key in dropdownContent) {
+        
+        dropdownContent[key].classList.toggle("hide");
+      
+      
+    } */
+      //console.log(typeof(dropdownContent));
+      
+      /* dropdownContent.forEach((xx,index)=>{
+        if(index!=i){
+          xx.classList.toggle("hide");
+        }
+
+      }) */
+      
+    }
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    let dropdowns = document.getElementsByClassName("dropdownContent");
+    let i;
+    for (i = 0; i < dropdowns.length; i++) {
+      let openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+        //dropdowns.classList.add('hide');
+      }
+    }
+  }
+}
+var clicktest=document.getElementById('clicktest');
+var clickfather=document.getElementById('clickfather');
+
+var trackDropdown=document.getElementById('trackDropdown');
+var trackDropdownTop=document.getElementById('trackDropdownTop');
+//console.log(trackDropdown.innerText);
+var trackDropdownEle=trackDropdown.getElementsByTagName('a');
+//console.log(trackDropdownEle[0].id);
+for (let i=0; i<trackDropdownEle.length; i++){
+  trackDropdownEle[i].onclick=function(){
+    console.log(i);
+    trackDropdownTop.innerText=trackDropdownEle[i].innerText;
+
+    if(i===(trackDropdownEle.length-1)){
+      myFunction('all');
+    }
+    /* else if(input.onclick){
+      myFunction('all');
+      //trackDropdownTop.innerText='All';
+    } */
+    else{
+      myFunction('categ', i);
+    }
+
+    
+
+  }
+}
+
+var topicDropdown=document.getElementById('topicDropdown');
+var topicDropdownTop=document.getElementById('topicDropdownTop');
+//console.log(trackDropdown.innerText);
+var topicDropdownEle=topicDropdown.getElementsByTagName('a');
+//console.log(trackDropdownEle[0].id);
+for (let i=0; i<topicDropdownEle.length; i++){
+  topicDropdownEle[i].onclick=function(){
+    console.log(i);
+    topicDropdownTop.innerText=topicDropdownEle[i].innerText;
+
+    if(i===(topicDropdownEle.length-1)){
+      myFunction('all');
+    }
+    else{
+      myFunction('topic','',i);
+    }
+
+    
+
+  }
+}
+
+//input click other menu display init
+input.onclick=function(){
+  trackDropdownTop.innerText='Track';
+  topicDropdownTop.innerText='Type';
+}
+
+/* clicktest.addEventListener('click',function(){
+  alert('view1 --- 事件捕获');
+},false);
+clickfather.addEventListener('click',function(){
+  alert('view2 --- 事件捕获');
+},false); */
+
+
+
+
+
+
+window.onscroll = function()
+{
+    if(pageYOffset >= 100)
+    {
+        document.getElementById('hide').style.visibility="visible";
+    }else
+    {
+        document.getElementById('hide').style.visibility="hidden";
+    }
+};
+        function f() {
+           document.body.scrollTop = 0;
+        };
+
+	</script>
+</body>
+</html>

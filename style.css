@@ -1,0 +1,514 @@
+@font-face
+{
+font-family: CentraNo2Square-Bold;
+src: url('https://kindred.live/wp-content/uploads/2019/06/CentraNo2Square-Bold.woff'),
+     url('https://kindred.live/wp-content/uploads/2019/06/CentraNo2Square-Bold.eot'); /* IE9+ */
+}
+
+@font-face
+{
+font-family: CentraNo2Square-Book;
+src: url('https://kindred.live/wp-content/uploads/2019/06/CentraNo2Square-Book.woff'),
+     url('https://kindred.live/wp-content/uploads/2019/06/CentraNo2Square-Book.eot'); /* IE9+ */
+}
+
+@font-face
+{
+font-family: CentraNo2Square-Medium;
+src: url('https://kindred.live/wp-content/uploads/2019/06/CentraNo2Square-Medium.woff'),
+     url('https://kindred.live/wp-content/uploads/2019/06/CentraNo2Square-Medium.eot'); /* IE9+ */
+}
+
+body {
+  font-family: CentraNo2Square-Book;
+  line-height: 1.25;
+  width: 100%;
+  padding: 0;
+  margin: 0;	
+  background:#f2f2f5;
+}
+
+.main{
+	margin: 0 auto;
+	width: 90%;
+}
+
+button{
+	outline:none;
+	margin: 0;
+	padding: 0;
+	border: 1px solid transparent; 
+
+	}
+
+table {
+/*  border: 1px solid #ccc;*/
+  border-collapse: collapse;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  table-layout: fixed;
+}
+
+header{
+	width: 100%;
+	display: block;
+	position: fixed;
+	background: white;
+	z-index: 99;
+	display: none
+
+}
+
+.nav{
+	background: white;
+	height: 60px;
+	border-bottom: 1px #cccccc solid;
+}
+
+.logo{
+	width: 100px;
+	padding: 10px 50px;
+}
+
+.topNav{
+	float: right;
+/* 	line-height: 70px;
+ */	padding: 10px 50px;
+
+}
+
+.topNav button{
+	padding: 10px 20px;
+	background: #00A0D3;
+	color: white;
+	font-family: CentraNo2Square-Medium;
+    margin-left: 10px /* height: 50px */;
+	font-size: 0.8rem;
+	border: 2px solid #00A0D3;
+
+/* 	height: 50px
+ */
+}
+
+.topNav button:hover{
+	border: 2px solid #00A0D3;
+	background: white;
+	color: #00A0D3
+/* 	height: 50px
+ */
+}
+
+.topNav button:last-child{
+	border: 2px solid #00A0D3;
+	background: white;
+	color: #00A0D3
+}
+
+.topNav button:last-child:hover{
+	background: #00A0D3;
+	color: white;
+}
+
+.titleF{
+	height: 100px
+}
+
+.titleF h1{
+	text-align: center;
+	font-family: CentraNo2Square-bold;
+	font-size: 2.2rem;
+}
+
+.dateFixed{
+	height: 50px;
+	background: black;
+}
+
+table caption {
+  font-size: 1.5em;
+margin: .75em 0 .3em;
+	font-family: CentraNo2Square-Bold;
+	font-weight:bold;
+	text-align: center;
+color: white;
+background: #8f90a6;
+padding: 10px
+}
+
+table tr {
+  /*background-color: #f8f8f8;
+  border: 1px solid #ddd;
+  padding: .35em;*/
+}
+
+table th,
+table td {
+/*  padding: .625em;*/
+  text-align: center;
+}
+
+table th {
+  /* letter-spacing: .05em; */
+/*  text-transform: uppercase;*/
+}
+
+.activity td{
+	/*border: 2px solid black;
+	border-radius: 20px;
+	background-color: aliceblue;*/
+	font-size: 0.8rem;
+	padding: 3px;
+	vertical-align: top
+}
+
+.activity td span{
+/*	height: 3rem*/
+	margin: 3px auto;
+}
+
+
+
+.activity td .element{
+	border: 0px solid black;
+	border-radius: 5px;
+	background-color: #fff;
+	width: 100% !important;
+	display: inline-block;
+	overflow: hidden;
+/*	padding: 10px 0;*/
+/*	min-height: 4.5rem;*/
+}
+
+.activity td .element .blue{
+	text-align: left;
+	background-color: #80e0ea;
+	padding: 5px 10px;
+	color: white
+	
+}
+
+.activity td .element .yellow{
+	text-align: left;
+	background-color: #facc85;
+	padding: 5px 10px;
+	color: white
+	
+}
+
+.activity td .element .pink{
+	text-align: left;
+	background-color: #eb7d9f;
+	padding: 5px 10px;
+	color: white
+	
+}
+
+.triangle .content{
+	width: 6px;
+	height: 6px;
+	border:#fff solid;
+	border-width: 1px 1px 0 0;
+	transform: rotate(135deg);
+	margin-bottom: 4px;
+}
+
+.activity td .element .text{
+	padding: 10px;
+	text-align: left
+	
+}
+
+.activity td .element .text h3{
+	font-family: CentraNo2Square-Bold;
+	margin: 0
+	
+}
+
+.activity td .element .text p{
+	margin: 0
+	
+}
+
+.activity td .element .text span{
+	font-family: CentraNo2Square-Medium;
+	
+}
+
+
+
+.activity td .gray{
+	border: 0px solid black;
+	border-radius: 5px;
+	background-color: #e4e4eb;
+	width: 100% !important;
+	display: inline-block;
+	font-family: CentraNo2Square-Book;
+	/* font-weight:bold; */
+/*	padding: 10px 0;*/
+}
+
+/* .activity td .content{
+	border: 0px solid black;
+	background-color: #fff;
+	width: 100% !important;
+	display: inline-block;
+}
+
+.activity td .element{
+	border: 0px solid black;
+	border-radius: 5px;
+	width: 100% !important;
+	display: inline-block;
+
+
+} */
+
+/* .activity td:nth-child(1){
+	border: none !important;
+	background-color: rgba(255, 255, 255, 0);
+	text-align: left;
+}
+
+tr th:nth-child(1){
+	font-size: 0.8rem;
+	font-weight: normal;
+	text-align: left;
+width: 15%;
+}
+ */
+tr th:nth-child(1){
+	color: sandybrown;
+	font-family: CentraNo2Square-Bold;
+	padding: 10px 0;
+	font-weight:bold;
+}
+
+tr th:nth-child(2){
+	color: #00A0D3;
+	font-family: CentraNo2Square-Bold;
+	padding: 10px 0;
+}
+
+tr th:nth-child(3){
+	color: #D10003;
+	font-family: CentraNo2Square-Bold;
+	padding: 10px 0;
+}
+tr tdf span p{
+	font-size: 0.8rem
+}
+
+#agenda-logo{
+	padding: 20px 0 0;
+	display: inline-block;
+}
+
+#agenda-logo img{
+	width: 120px;
+}
+
+#agenda-print{
+	text-align: center;
+	padding: 30px 0 30px;
+	width: 10%;
+	float: right;
+	display: inline-block;
+}
+
+#agenda-print button{
+	margin: 0;
+	padding: 0;
+	border: 1px solid transparent;
+	outline: none;
+	border-radius: 10px;
+	background-color: #00A0D3;
+	padding: 10px 35px;
+	color: white;
+	font-family: CentraNo2Square-Medium;
+
+
+}
+
+
+
+
+
+.date{
+	font-size: 1.5em;
+  margin: .75em 0 .3em;
+	  font-family: CentraNo2Square-Bold;
+	  font-weight:bold;
+	  text-align: center;
+  color: white;
+  background: #8f90a6;
+  }
+
+  .date td{
+  padding: 10px
+  }
+
+  #test tbody{
+	  margin-bottom: 2rem
+  }
+
+  .dropbtn {
+    color: gray;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 150px;
+    text-align: left;
+	background: none
+}
+
+/*
+.dropbtn:hover, .dropbtn:focus {
+  background-color: #2980B9;
+}
+*/
+	
+/*.triangle{
+	display: inline-block;
+	float: right;
+}
+
+.triangle .content{
+	width: 6px;
+	height: 6px;
+	border:gray solid;
+	border-width: 1px 1px 0 0;
+	transform: rotate(135deg);
+	margin-bottom: 4px;
+}*/
+
+.dropbtn::after {
+    content: '';
+    width: 1px;
+    height: 1px;
+    right: 1rem;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    display: inline-block;
+    border-top: 5px solid #595959;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    transition: -webkit-transform .25s ease-in-out;
+    transition: transform .25s ease-in-out;
+    transition: transform .25s ease-in-out, -webkit-transform .25s ease-in-out;
+}
+	
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdownContent {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdownContent a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+.hide {display: none;}
+
+@media screen and (max-width: 480px) {
+  table {
+    border: 0;
+  }
+
+  table caption {
+    font-size: 1.3em;
+  }
+
+  .date{
+    font-size: 1.3em;
+  }
+  
+  table thead {
+    border: none;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  }
+  
+  table tr {
+/*     border-bottom: 1px solid #ddd;
+ */    display: block;
+    margin-bottom: .625em;
+	  border-spacing: 0px 10px;
+/*	      border-top: 3px solid #ddd;*/
+/* 	     border-top: 1px solid #ddd;
+ */
+
+
+  }
+  
+  table td {
+/*    border-bottom: 1px solid #ddd;*/
+    display: block;
+    font-size: .8em;
+    text-align: right;
+  }
+  
+  table td::before {
+    /*
+    * aria-label has no advantage, it won't be read inside a table
+    content: attr(aria-label);
+    */
+    content: attr(data-app-label);
+    float: left;
+	font-weight: bold;
+	font-family: CentraNo2Square-Bold;
+	width: 100%;
+    text-align: left;
+/*    text-transform: uppercase;*/
+  }
+	
+table td:nth-child(1)::before {
+	color: sandybrown;
+	}
+	
+table td:nth-child(2)::before {
+	color: #00A0D3;
+	}
+
+table td:nth-child(3)::before {
+	color: #D10003;
+	}
+  
+  table td:last-child {
+    border-bottom: 0;
+  }
+  .activity td .yellow, .activity td .blue, .activity td .pink, .activity td .gray{
+	text-align: left;
+	
+}
+	.activity td p{
+		padding: 0 10px
+	}
+
+}
