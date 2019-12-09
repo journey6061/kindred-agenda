@@ -56,8 +56,8 @@ header{
 	position: fixed;
 	background: white;
 	z-index: 99;
-	display: none
-
+/* 	display: none
+ */
 }
 
 .nav{
@@ -111,7 +111,8 @@ header{
 }
 
 .titleF{
-	height: 100px
+	height: 120px;
+	text-align: center
 }
 
 .titleF h1{
@@ -355,7 +356,7 @@ tr tdf span p{
   .dropbtn {
     color: gray;
     padding: 8px;
-    font-size: 16px;
+    font-size: 13px;
     border: 1px solid gray;
     border-radius: 10px;
     cursor: pointer;
@@ -407,6 +408,7 @@ tr tdf span p{
 .dropdown {
   position: relative;
   display: inline-block;
+  margin: 0 5px
 }
 
 .dropdownContent {
@@ -433,12 +435,15 @@ tr tdf span p{
 
 #backTop{
 	visibility:hidden; 
-	height: 48px;
-	width: 38px;
-	background-color: bisque;
-	position: fixed;
-	bottom: 10px;
-	right: 10px
+	font-family: CentraNo2Square-Bold;
+	background-color: #6f6f6f;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    text-decoration: none;
+    color: white;
+	padding: 5px;
+	text-transform:capitalize
 }
 
 .perSection{
@@ -451,6 +456,7 @@ tr tdf span p{
     top: 0;
 	left: 0;
 	overflow: hidden;
+	display: none
 }
 
 .perSection .sectionContent{
@@ -473,6 +479,12 @@ tr tdf span p{
 	font-size: 3rem;
 	margin-left: 5%;
 	top: 5%
+}
+
+#myInput{
+	height: 1.6rem;
+	font-size: 13px;
+	margin: 5px;
 }
 
 
@@ -554,6 +566,38 @@ table td:nth-child(3)::before {
 }
 	.activity td p{
 		padding: 0 10px
+	}
+
+
+	.nav{
+		height: 38px;
+		padding: 20px;
+	}
+	
+	.logo{
+		
+		width: 22%;
+		display: inline-block;
+		padding: 0;
+	}
+	
+	.topNav{
+	/* 	line-height: 70px;
+	 */	padding: 0;
+
+
+	 width: 77%;
+	 margin: 0 !important;
+	
+	
+	}
+	
+	.topNav button{
+		float: right;
+		padding: 7px 12px;
+	
+	/* 	height: 50px
+	 */
 	}
 
 }

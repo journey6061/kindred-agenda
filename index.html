@@ -23,16 +23,52 @@
   </div>
   <div class="titleF">
     <h1>Agenda</h1>
-    <div class="filterNav"></div>
+    <div class="filterNav">
+        <input type="text" id="myInput" onkeyup="myFunction('ele')" placeholder="Search...">
+        <div class="dropdown" id="dateclickfather">
+            <!-- <button onclick="dropdownMenu()" class="dropbtn"> -->
+            <button class="dropbtn">
+              Date
+            </button>
+            <div id="dateDropdown" class="dropdownContent">
+              <a href="#date12" id="clicktest">May 12</a>
+              <a href="#date13">May 13</a>
+              <a href="#date14">May 14</a>
+            </div>
+        </div>
+        
+        <div class="dropdown" id="trackclickfather">
+            <button class="dropbtn" id="trackDropdownTop">
+              Track
+            </button>
+            <div id="trackDropdown" class="dropdownContent">
+              <a>Cultural Forces</a>
+              <a>Purpose-Led Org</a>
+              <a>Making an Impact</a>
+              <a>All</a>
+            </div>
+        </div>
+        
+        <div class="dropdown" id="topicclickfather">
+            <button class="dropbtn" id="topicDropdownTop">
+              Type
+            </button>
+            <div id="topicDropdown" class="dropdownContent">
+              <a>eat</a>
+              <a>sleep</a>
+              <a>play</a>
+              <a>All</a>
+            </div>
+        </div>
+    </div>
   </div>
   <div class="dateFixed">
 
   </div>
 </header>
-
+<!-- 
 <input type="text" id="myInput" onkeyup="myFunction('ele')" placeholder="搜索...">
 <div class="dropdown" id="dateclickfather">
-    <!-- <button onclick="dropdownMenu()" class="dropbtn"> -->
     <button class="dropbtn">
       Date
     </button>
@@ -66,6 +102,8 @@
       <a>All</a>
     </div>
 </div>
+ -->
+
 <div class="main">
 <table id="test">
   <caption>May 12</caption>
@@ -103,7 +141,7 @@
     <tr class="activity category">
       <!-- <td scope="row" data-app-label="Time">10:10am-11:00am</td> -->
       <td data-app-label="Cultural Forces">
-          <div class="element">
+          <div class="element" id="testcontent">
               <div class="yellow">
                   <div class="triangle">
                       <div class="content"></div>
@@ -913,7 +951,7 @@
 </div>
 
 
-<a id="backTop" href="#" onclick="backToTop();">返回顶部</a>
+<a id="backTop" href="#" >back to top</a>
 <!-- partial -->
 
 
@@ -1135,20 +1173,82 @@ input.onclick=function(){
   topicDropdownTop.innerText='Type';
 }
 
+var backTop=document.getElementById('backTop');
 //返回顶部
 window.onscroll = function()
 {
     if(pageYOffset >= 100)
     {
-        document.getElementById('backTop').style.visibility="visible";
+      backTop.style.visibility="visible";
     }else
     {
-        document.getElementById('backTop').style.visibility="hidden";
+      backTop.style.visibility="hidden";
     }
 };
+/* 
+const currentY = document.documentElement.scrollTop || document.body.scrollTop
+
 function backToTop() {
-    document.body.scrollTop = 0;
+    //document.body.scrollTop = 0;
+    //scrollAnimation(currentY, 0)
+    ScrollTop(800, 8000);
+}; */
+
+function contentShow(){
+    var innerContent=this.children;
+    //innerContent.style.display='block';
+    console.log(this);
+}
+
+//iframe 显示
+var testcontent=document.getElementById('testcontent');
+testcontent.onclick=function(){
+  var innerContent=this.getElementsByClassName('perSection')[0];
+  innerContent.style.display='block';
+}
+
+
+backTop.onclick=function(){
+  ScrollTop(getPosition(testcontent), 200);
+}
+
+
+const ScrollTop = (number = 0, time) => {
+    if (!time) {
+        document.body.scrollTop = document.documentElement.scrollTop = number;
+        return number;
+    }
+    const spacingTime = 20; // 设置循环的间隔时间  值越小消耗性能越高
+    let spacingInex = time / spacingTime; // 计算循环的次数
+    let nowTop = document.body.scrollTop + document.documentElement.scrollTop; // 获取当前滚动条位置
+    let everTop = (number - nowTop) / spacingInex; // 计算每次滑动的距离
+    let scrollTimer = setInterval(() => {
+        if (spacingInex > 0) {
+            spacingInex--;
+            ScrollTop(nowTop += everTop);
+        } else {
+            clearInterval(scrollTimer); // 清除计时器
+        }
+    }, spacingTime);
 };
+
+var testcontent=document.getElementById('testcontent');
+
+function getPosition(element) {
+    var xPosition = 0;
+    var yPosition = 0;
+
+    while(element) {
+        xPosition += (element.offsetLeft - element.scrollLeft + element.clientLeft);
+        yPosition += (element.offsetTop - element.scrollTop + element.clientTop);
+        element = element.offsetParent;
+    }
+
+   // return { x: xPosition, y: yPosition };
+   return yPosition ;
+}
+
+console.log(getPosition(testcontent))
 
 	</script>
 </body>
